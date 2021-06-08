@@ -1,17 +1,15 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Laravel</title>
-        {{-- MAIN STYLE --}}
-        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-    </head>
-    <body>
-        {{-- HEADER --}}
-        @include('partials.header')
+@extends('layouts.main')
 
-        {{-- FOOTER --}}
-        @include('partials.footer')
-    </body>
-</html>
+@section('content')
+    <div class="container">
+        <div class="cards">
+            @foreach ($comics as $comic)
+                <div class="card">
+                    <img src="{{$comic['image']}}" alt="{{$comic['title']}}">
+                    <div class="title">{{$comic['title']}}</div>
+                </div>
+            @endforeach
+        </div>
+        <button>LOAD MORE</button>
+    </div>
+@endsection

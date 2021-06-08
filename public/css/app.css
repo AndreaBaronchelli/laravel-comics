@@ -16,6 +16,10 @@ a {
   text-decoration: none;
 }
 
+main {
+  background: #1c1c1c;
+}
+
 .container {
   width: 1170px;
   margin: 0 auto;
@@ -45,9 +49,44 @@ a {
   color: #097cea;
 }
 
+main .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 50px;
+}
+
+.cards .card {
+  width: calc(100% / 6);
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+.cards .card .title {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #fff;
+}
+
+button {
+  margin-bottom: 2rem;
+  border: none;
+  padding: 1rem 4rem;
+  text-align: center;
+  color: #fff;
+  background-color: #097cea;
+  cursor: pointer;
+}
+
 footer {
   border-top: 20px solid #097cea;
-  background: #1c1c1c;
+  background: #303030;
   padding: 25px 0;
 }
 
