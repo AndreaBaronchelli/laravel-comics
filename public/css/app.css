@@ -1,7 +1,5 @@
 /* APP MAIN STYLE */
-
 /* GENERAL STYLE */
-
 * {
   margin: 0;
   padding: 0;
@@ -32,28 +30,23 @@ main {
 .main-header {
   padding: 1rem 0;
 }
-
 .main-header .container {
   display: flex;
   align-items: center;
 }
-
 .main-header ul {
   list-style: none;
   display: flex;
 }
-
 .main-header ul a {
   margin-left: 70px;
   font-weight: 700;
   color: #1c1c1c;
 }
-
 .main-header ul a.active {
   position: relative;
   color: #097cea;
 }
-
 .main-header ul a.active::after {
   position: absolute;
   left: 50%;
@@ -78,13 +71,11 @@ main {
   flex-wrap: wrap;
   padding-top: 50px;
 }
-
 .cards .card {
   width: calc(100% / 6);
   margin-bottom: 50px;
   cursor: pointer;
 }
-
 .cards .card .title {
   margin-top: 20px;
   font-size: 14px;
@@ -105,12 +96,10 @@ button {
   padding: 50px 0;
   color: #fff;
 }
-
 .news h2 {
   color: #097cea;
   padding-bottom: 1rem;
 }
-
 .news p {
   margin: 1rem 0;
 }
@@ -120,35 +109,28 @@ footer {
   background: #303030;
   padding: 25px 0;
 }
-
 footer .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 footer .sign-up {
   padding: 1rem;
   border: 2px solid #097cea;
 }
-
 footer .sign-up a {
   color: #fff;
 }
-
 footer .social {
   display: flex;
   align-items: center;
   list-style: none;
 }
-
 footer .social li {
   margin-left: 30px;
 }
-
 footer .social li:first-child {
   margin-left: 0;
   font-weight: 700;
   color: #097cea;
 }
-

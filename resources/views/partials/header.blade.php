@@ -6,11 +6,11 @@
         <nav>
             <ul>
                 <li><a href="{{ route('home')}}" class="
-                    @if (url()->full() == 'http://127.0.0.1:8000')
+                    @if (Request::route()->getName() === 'home')
                         {{ 'active' }}
                     @endif">Comics</a></li>
                 <li><a href="{{ route('news')}}" class="
-                    @if (url()->full() == 'http://127.0.0.1:8000/news')
+                    @if (Request::route()->getName() === 'news')
                         {{ 'active' }}
                     @endif">News</a></li>
             </ul>
