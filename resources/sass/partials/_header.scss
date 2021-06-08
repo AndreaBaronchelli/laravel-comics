@@ -1,0 +1,21 @@
+// HEADER
+
+.main-header {
+    padding: 1rem 0;
+    .container {
+        display: flex;
+        align-items: center;
+    }
+    ul {
+        list-style: none;
+        display: flex;
+        a {
+            margin-left: 70px;
+            font-weight: 700;
+            color: $sec-col;
+            &.active {
+                color: $main-col;
+            }
+        }
+    }
+}

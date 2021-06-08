@@ -1,0 +1,31 @@
+// FOOTER
+footer {
+    border-top: 20px solid $main-col;
+    background: $sec-col;
+    padding: 25px 0;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .sign-up {
+        padding: 1rem;
+        border: 2px solid $main-col;
+        a {
+            color: #fff;
+        }
+    }
+    .social {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        li {
+            margin-left: 30px;
+            &:first-child {
+                margin-left: 0;
+                font-weight: 700;
+                color: $main-col;
+            }
+        }
+    }
+}

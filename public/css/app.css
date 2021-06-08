@@ -1,0 +1,84 @@
+/* APP MAIN STYLE */
+
+/* GENERAL STYLE */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.main-header {
+  padding: 1rem 0;
+}
+
+.main-header .container {
+  display: flex;
+  align-items: center;
+}
+
+.main-header ul {
+  list-style: none;
+  display: flex;
+}
+
+.main-header ul a {
+  margin-left: 70px;
+  font-weight: 700;
+  color: #1c1c1c;
+}
+
+.main-header ul a.active {
+  color: #097cea;
+}
+
+footer {
+  border-top: 20px solid #097cea;
+  background: #1c1c1c;
+  padding: 25px 0;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .sign-up {
+  padding: 1rem;
+  border: 2px solid #097cea;
+}
+
+footer .sign-up a {
+  color: #fff;
+}
+
+footer .social {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+footer .social li {
+  margin-left: 30px;
+}
+
+footer .social li:first-child {
+  margin-left: 0;
+  font-weight: 700;
+  color: #097cea;
+}
+
